@@ -9,7 +9,9 @@ function renderCartItem(item) {
     // title - наименование
     // price - цена
     // count - количество
-
+    
+    // я решил объединить все склеивания и вычисления в одну шаблонную строку
+    let itemCountText = `количество ${product.count} × цена ${product.price} ₽ = ${product.count * product.price} ₽`;
     // сформируйте строку itemCountText вида:
     // количество × цена ₽ = стоимость ₽
     // например,
